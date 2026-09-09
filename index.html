@@ -1,12 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabboo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gabboo — gaming, creative projects, livestreams, and digital experiments." />
+  <title>Gabboo | Creator & Gamer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<H1>Welcome to Gabboo's Website</H1>
-<p>Gabboo is a growing content creator, as well as a student in computer science. This website will host his work and projects.</p>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Gabboo home">GABBOO<span>_</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#content">Content</a>
+      <a href="#projects">Projects</a>
+      <a href="#connect">Connect</a>
+    </nav>
+    <a class="header-cta" href="#connect">Let’s talk <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> ONLINE • FRANCE</p>
+        <h1 id="hero-title">Gaming.<br /><em>Creating.</em><br />Building worlds.</h1>
+        <p class="hero-description">
+          I’m Gabboo, a French creator exploring games, livestreams, digital art,
+          and code — one project, stream, and chaotic idea at a time.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#content">Explore my world <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#connect">Find me online <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Decorative creator dashboard">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="hero-card">
+          <div class="card-topline">
+            <span>NOW PLAYING</span>
+            <span class="live-pill"><i></i> LIVE</span>
+          </div>
+          <div class="pixel-face" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="card-bottomline">
+            <span>ROBLOX • PC • CREATION</span>
+            <span>01/01</span>
+          </div>
+        </div>
+        <div class="floating-tag tag-code">&lt;/&gt; CODE</div>
+        <div class="floating-tag tag-art">✦ ART</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Interests">
+      <div class="ticker-track">
+        <span>ROBLOX</span><b>✦</b><span>STREAMING</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>PYTHON</span><b>✦</b><span>GAMING</span><b>✦</b><span>ROBLOX</span><b>✦</b><span>STREAMING</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>PYTHON</span><b>✦</b><span>GAMING</span><b>✦</b>
+      </div>
+    </section>
+
+    <section class="section intro" id="about">
+      <div class="section-label">01 — ABOUT ME</div>
+      <div class="intro-grid">
+        <h2>A curious creator with a keyboard, a sketchbook, and way too many tabs open.</h2>
+        <div>
+          <p>
+            I create around the things I genuinely enjoy: gaming communities, immersive Roblox experiences, digital visuals, and useful little programming experiments.
+          </p>
+          <p>
+            Based near Paris, I switch naturally between French and English and keep learning through making things that I can share with others.
+          </p>
+          <a class="text-link" href="#projects">See what I make <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section" id="content">
+      <div class="section-heading">
+        <div class="section-label">02 — CONTENT</div>
+        <h2>What you’ll find here.</h2>
+      </div>
+      <div class="content-grid">
+        <article class="content-card featured-card">
+          <div class="card-icon">▶</div>
+          <p class="card-number">01</p>
+          <h3>Streams & videos</h3>
+          <p>Gaming sessions, live experiments, highlights, and the occasional behind-the-scenes creator chaos.</p>
+          <a href="#connect" aria-label="Find Gabboo on streaming platforms">Watch along <span>↗</span></a>
+        </article>
+        <article class="content-card">
+          <div class="card-icon">✦</div>
+          <p class="card-number">02</p>
+          <h3>Digital creation</h3>
+          <p>Illustrations, avatars, visual concepts, and 3D ideas made while learning new creative tools.</p>
+          <a href="#connect" aria-label="Find Gabboo's art">See the art <span>↗</span></a>
+        </article>
+        <article class="content-card">
+          <div class="card-icon">&lt;/&gt;</div>
+          <p class="card-number">03</p>
+          <h3>Code & projects</h3>
+          <p>Small programming projects, algorithm practice, website experiments, and things I build for fun.</p>
+          <a href="#projects" aria-label="View Gabboo's projects">Browse projects <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading projects-heading">
+        <div>
+          <div class="section-label">03 — SELECTED WORK</div>
+          <h2>Made to learn.<br />Made to share.</h2>
+        </div>
+        <p>Replace these cards with your real videos, games, Discord projects, artwork, GitHub repositories, or anything you’re proud of.</p>
+      </div>
+      <div class="project-list">
+        <a class="project-row" href="#connect">
+          <span class="project-index">01</span>
+          <span class="project-type">GAMING / COMMUNITY</span>
+          <span class="project-title">Roblox adventures</span>
+          <span class="project-arrow">↗</span>
+        </a>
+        <a class="project-row" href="#connect">
+          <span class="project-index">02</span>
+          <span class="project-type">STREAMING / VIDEO</span>
+          <span class="project-title">Live creator sessions</span>
+          <span class="project-arrow">↗</span>
+        </a>
+        <a class="project-row" href="#connect">
+          <span class="project-index">03</span>
+          <span class="project-type">CODE / WEB</span>
+          <span class="project-title">Personal web experiments</span>
+          <span class="project-arrow">↗</span>
+        </a>
+        <a class="project-row" href="#connect">
+          <span class="project-index">04</span>
+          <span class="project-type">ART / DESIGN</span>
+          <span class="project-title">Digital art & avatars</span>
+          <span class="project-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="connect">
+      <p class="eyebrow">04 — CONNECT</p>
+      <h2>Let’s make<br /><em>something cool.</em></h2>
+      <p>Follow the journey, join the community, or say hi.</p>
+      <div class="social-links">
+        <!-- Replace each # with your real profile link. -->
+        <a href="#" target="_blank" rel="noreferrer">YouTube <span>↗</span></a>
+        <a href="#" target="_blank" rel="noreferrer">Twitch <span>↗</span></a>
+        <a href="#" target="_blank" rel="noreferrer">Discord <span>↗</span></a>
+        <a href="https://github.com/gabboo122" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top">GABBOO<span>_</span></a>
+    <p>© <span id="year"></span> Gabboo. Built with curiosity.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
