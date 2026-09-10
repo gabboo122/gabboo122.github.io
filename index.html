@@ -9,12 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="script" href="script.js"/>
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Gabboo home">GABBOO<span>_</span></a>
+    <a class="brand" href="#top" aria-label="Gabboo home">GABBOO<span class="blink">_</span></a>
     <nav aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#content">Content</a>
@@ -56,7 +57,12 @@
           </div>
           <div class="card-bottomline">
             <span>ROBLOX • PC • CREATION</span>
-            <span>01/01</span>
+            <span id="date-span"></span>
+            <script>const now = new Date();
+const day = String(now.getDate()).padStart(2, '0');
+const month = String(now.getMonth() + 1).padStart(2, '0'); // getMonth() is 0–11
+const text = `${day}/${month}`;
+document.getElementById('date-span').textContent = text;</script>
           </div>
         </div>
         <div class="floating-tag tag-code">&lt;/&gt; CODE</div>
@@ -66,7 +72,7 @@
 
     <section class="ticker" aria-label="Interests">
       <div class="ticker-track">
-        <span>ROBLOX</span><b>✦</b><span>STREAMING</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>PYTHON</span><b>✦</b><span>GAMING</span><b>✦</b><span>ROBLOX</span><b>✦</b><span>STREAMING</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>PYTHON</span><b>✦</b><span>GAMING</span><b>✦</b>
+        <span>ROBLOX</span><b>✦</b><span>STREAMING</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>PYTHON</span><b>✦</b><span>GAMING</span><b>✦</b><span>ROBLOX</span><b>✦</b><span>STREAMING</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>PYTHON</span><b>✦</b><span>GAMING</span><b>✦</b><span>ROBLOX</span><b>✦</b><span>STREAMING</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>PYTHON</span><b>✦</b><span>GAMING</span><b>✦</b><span>ROBLOX</span><b>✦</b><span>STREAMING</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>PYTHON</span><b>✦</b><span>GAMING</span><b>✦</b><span>ROBLOX</span><b>✦</b><span>STREAMING</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>PYTHON</span><b>✦</b><span>GAMING</span><b>✦</b><span>ROBLOX</span><b>✦</b><span>STREAMING</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>PYTHON</span><b>✦</b><span>GAMING</span><b>✦</b><span>ROBLOX</span><b>✦</b><span>STREAMING</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>PYTHON</span><b>✦</b><span>GAMING</span><b>✦</b><span>ROBLOX</span><b>✦</b><span>STREAMING</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>PYTHON</span><b>✦</b><span>GAMING</span><b>✦</b>
       </div>
     </section>
 
@@ -99,14 +105,14 @@
           <p>Gaming sessions, time shared with viewers, and a bunch of chaos.</p>
           <a href="#connect" aria-label="Find Gabboo on streaming platforms">Watch along <span>↗</span></a>
         </article>
-        <article class="content-card">
+        <article class="content-card media-card">
           <div class="card-icon">✦</div>
           <p class="card-number">02</p>
           <h3>Digital creation</h3>
           <p>Illustrations, avatars, visual concepts, and 3D ideas made while learning new creative tools.</p>
           <a href="#connect" aria-label="Find Gabboo's art">See the art <span>↗</span></a>
         </article>
-        <article class="content-card">
+        <article class="content-card info-card">
           <div class="card-icon">&lt;/&gt;</div>
           <p class="card-number">03</p>
           <h3>Code & projects</h3>
@@ -167,7 +173,7 @@
   </main>
 
   <footer>
-    <a class="brand" href="#top">GABBOO<span>_</span></a>
+    <a class="brand" href="#top">GABBOO<span class="blink">_</span></a>
     <p>© <span id="year"></span> Gabboo. Built with curiosity.</p>
     <a href="#top">Back to top ↑</a>
   </footer>
